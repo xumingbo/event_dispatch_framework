@@ -3,7 +3,7 @@
 
 void te_Callback1(time_t t)
 {   
-    std::cout << "every " << t << " seconds, dancing.\n";
+    std::cout << "every " << t << " second, dancing.\n";
 }
 
 void te_Callback2(time_t t)
@@ -13,8 +13,8 @@ void te_Callback2(time_t t)
 }
 
 int main(void)
-{   TimeEvent *timeRepeat = new TimeEvent (5, te_Callback1, true);
-    TimeEvent *timeTerm = new TimeEvent (20, te_Callback2);
+{   TimeEvent *timeRepeat = new TimeEvent (1, te_Callback1, true);
+    TimeEvent *timeTerm = new TimeEvent (6, te_Callback2);
     theDispatcher().Loop();
     delete timeRepeat;
     timeTerm = NULL; //timeTerm self destructed
