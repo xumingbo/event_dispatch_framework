@@ -18,12 +18,14 @@ Here presents just such a generic event dispatcher framework that:
 - Describes events, event sources, event dispatchers, and their relationships in C++ so that extending a new event source is straightforward.
 
 The complete article of this framework (a.k.a. the GED library)  was published in 'C/C++ Users Journal October, 2005' and is available 
-[here.](https://docs.google.com/document/d/1EcIYACAjEQcUT-EuDHr1A-AvaaMyiowMaxsCCyjBVX8/edit?usp=sharing)
+[here.](https://docs.google.com/document/d/1EcIYACAjEQcUT-EuDHr1A-AvaaMyiowMaxsCCyjBVX8/view)
 
 
 ## Build and Run the sample code
 cd src
+
 make
+
 ./time_event
 
 
